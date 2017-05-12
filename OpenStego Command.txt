@@ -1,0 +1,21 @@
+java -jar <path>\openstego.jar embed -a RandomLSB -mf secret.txt -cf wallpaper.png -sf test.png
+
+-a  = algorithm
+-mf = messagefile
+-cf = cover file
+-sf = stegofile
+
+java -jar /usr/share/openstego/lib/openstego.jar embed -a RandomLSB -mf /home/ray/Desktop/OpenStego/commandLineTest/JU.txt -cf /home/ray/Desktop/OpenStego/commandLineTest/xmlQRcode.png -sf /home/ray/Desktop/OpenStego/commandLineTest/cmdStegoTest.png
+
+
+
+java -jar <path>\openstego.jar extract -a lsb -sf test.png -xd /data
+
+-sf = stego file (Stego file containing the embedded message )
+-xd = extract file (Directory where the message file will be extracted)
+
+java -jar /usr/share/openstego/lib/openstego.jar extract -a RandomLSB -sf /home/ray/Desktop/OpenStego/commandLineTest/cmdStegoTest.png -xd /home/ray/Desktop/OpenStego/commandLineTest/outputText/
+
+
+
+
