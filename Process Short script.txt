@@ -1,0 +1,30 @@
+1.
+A XML file will be created from user input.
+
+2.
+To sign a perticular XML file , using openssl linux toolwe wil generate public/private key pair (x.key) and a certificate signing request (x.csr ) file .
+
+3.
+using previously generated  x.csr file , we will create a certificate file ( x.crt ) on openssl tool .
+
+4.
+Now we will sign that XML file with the certificate(x.crt) file and the key(x.key) file using Xmlsectool .
+
+5.
+Then we converted the signed_Xml file into QR code using goole ZXing ("Zebra Crossing") library in java .
+
+6.
+In this processs we take a pre-determinded XSL style sheet to format the XML file and QRcode image  into a HTML file using "xmlto" tool .
+
+7.
+We used "wkhtmltopdf" tool to convert the HTML file into PDF file.
+
+8.
+we read  the QRcode from the printed paper using mobile camera or any convention QRcode Reader available in the market 
+
+9.
+Then we convert the QRcode in XML formate using zxing library .
+
+10.
+Finally we verify the xml document signature with the previously generated certificate file using "xmlsectool" . 
+ 
